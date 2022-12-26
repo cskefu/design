@@ -1,3 +1,6 @@
+
+<!-- https://www.cskefu.com/2022/12/25/rfc-2-cskefu-plugin-mechanism/ -->
+
 ## 原则
 
 1. 每个运行的软件系统针对一个插件只能安装一个版本；
