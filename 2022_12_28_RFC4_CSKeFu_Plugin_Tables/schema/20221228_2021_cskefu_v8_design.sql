@@ -11,7 +11,7 @@
  Target Server Version : 50740 (5.7.40-log)
  File Encoding         : 65001
 
- Date: 28/12/2022 16:05:48
+ Date: 28/12/2022 16:14:35
 */
 
 SET NAMES utf8mb4;
@@ -128,12 +128,15 @@ CREATE TABLE `cs_plugins_config_global`  (
   `name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin NULL DEFAULT NULL COMMENT 'Property name',
   `value` text CHARACTER SET utf8mb4 COLLATE utf8mb4_bin NULL COMMENT 'Property value',
   `type` varchar(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin NOT NULL COMMENT 'Property type, e.g. string, int, json, float',
-  `required` tinyint(1) NULL DEFAULT NULL COMMENT 'This property is required or not to use this plugin',
   `help` text CHARACTER SET utf8mb4 COLLATE utf8mb4_bin NULL COMMENT 'Tooltip to users to fill in value',
+  `required` tinyint(1) NULL DEFAULT NULL COMMENT 'This property is required or not to use this plugin',
+  `lastmodifieduserid` varchar(45) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin NULL DEFAULT NULL COMMENT 'Property last updated by who',
   `createtime` datetime NULL DEFAULT CURRENT_TIMESTAMP,
   `updatetime` datetime NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`) USING BTREE,
-  INDEX `KEY_GROUP_ART_VERSION_NAME`(`plugingroupid`, `pluginartifactid`, `pluginversion`, `name`) USING BTREE
+  INDEX `KEY_GROUP_ART_VERSION_NAME`(`plugingroupid`, `pluginartifactid`, `pluginversion`, `name`) USING BTREE,
+  INDEX `FKEY_LAST_MODIFIED_BY_G`(`lastmodifieduserid`) USING BTREE,
+  CONSTRAINT `FKEY_LAST_MODIFIED_BY_G` FOREIGN KEY (`lastmodifieduserid`) REFERENCES `cs_users` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT
 ) ENGINE = InnoDB CHARACTER SET = utf8mb4 COLLATE = utf8mb4_bin COMMENT = 'Plugin Configurations globally' ROW_FORMAT = Dynamic;
 
 -- ----------------------------
@@ -151,12 +154,15 @@ CREATE TABLE `cs_plugins_config_space`  (
   `value` text CHARACTER SET utf8mb4 COLLATE utf8mb4_bin NULL COMMENT 'Property value',
   `help` text CHARACTER SET utf8mb4 COLLATE utf8mb4_bin NULL COMMENT 'Tooltip to users to fill in value',
   `required` tinyint(1) NULL DEFAULT NULL COMMENT 'This property is required or not to use this plugin',
+  `lastmodifieduserid` varchar(45) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin NULL DEFAULT NULL COMMENT 'Property last updated by who',
   `createtime` datetime NULL DEFAULT CURRENT_TIMESTAMP,
   `updatetime` datetime NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`) USING BTREE,
   INDEX `FKEY_SPACE_ID`(`spaceid`) USING BTREE,
   INDEX `KEY_GROUP_ART_VERSION_SPACE_NAME`(`plugingroupid`, `pluginartifactid`, `pluginversion`, `spaceid`, `name`) USING BTREE,
-  CONSTRAINT `FKEY_SPACE_ID` FOREIGN KEY (`spaceid`) REFERENCES `cs_spaces` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT
+  INDEX `FKEY_LAST_MODIFIED_BY`(`lastmodifieduserid`) USING BTREE,
+  CONSTRAINT `FKEY_SPACE_ID` FOREIGN KEY (`spaceid`) REFERENCES `cs_spaces` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT,
+  CONSTRAINT `FKEY_LAST_MODIFIED_BY` FOREIGN KEY (`lastmodifieduserid`) REFERENCES `cs_users` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT
 ) ENGINE = InnoDB CHARACTER SET = utf8mb4 COLLATE = utf8mb4_bin COMMENT = 'Plugin Configurations by per Space' ROW_FORMAT = Dynamic;
 
 -- ----------------------------
