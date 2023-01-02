@@ -35,3 +35,4 @@ _deps
 .env
 .fid
 _build
+.obsidian/

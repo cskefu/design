@@ -1,0 +1,162 @@
+{
+  "main": {
+    "id": "d42925492dd518ee",
+    "type": "split",
+    "children": [
+      {
+        "id": "67076c5ac9aeb981",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b735ceca53aaf8fb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "sources/春松客服插件表结构设计.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "6e451cd98aa8b7c7",
+    "type": "split",
+    "children": [
+      {
+        "id": "0b3bf71d39f9f4db",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "948d861393daf2c7",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "1222ea4cfaea2498",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "b07a7f8bfa2714db",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "24c7b2c8182693ea",
+    "type": "split",
+    "children": [
+      {
+        "id": "755cfa98133b5868",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "da4c582a6d514629",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "sources/春松客服插件表结构设计.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "92df7a93e743d222",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "sources/春松客服插件表结构设计.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "25cc458e4a13aa69",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "f87f875f52e52216",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "sources/春松客服插件表结构设计.md"
+              }
+            }
+          },
+          {
+            "id": "7b2972ee1924937d",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "workspaces:Manage workspace layouts": false,
+      "omnisearch:Omnisearch": false,
+      "templater-obsidian:Templater": false
+    }
+  },
+  "active": "b735ceca53aaf8fb",
+  "lastOpenFiles": []
+}
