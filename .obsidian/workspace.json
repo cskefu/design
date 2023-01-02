@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "sources/春松客服插件表结构设计.md",
+                "file": "docs/2023_01_02_RFC5_CSKeFu_Persona/sources/RFC5 春松客服 Persona 用户人物设定.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "sources/春松客服插件表结构设计.md",
+                "file": "docs/2023_01_02_RFC5_CSKeFu_Persona/sources/RFC5 春松客服 Persona 用户人物设定.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "sources/春松客服插件表结构设计.md",
+                "file": "docs/2023_01_02_RFC5_CSKeFu_Persona/sources/RFC5 春松客服 Persona 用户人物设定.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "sources/春松客服插件表结构设计.md"
+                "file": "docs/2023_01_02_RFC5_CSKeFu_Persona/sources/RFC5 春松客服 Persona 用户人物设定.md"
               }
             }
           },
