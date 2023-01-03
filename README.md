@@ -54,12 +54,11 @@ RFC 即 Request for Comments, 是一种在开源社区广泛使用的设计、�
 
 在[春松客服官网](https://www.cskefu.com/admin)建立 RFC 并提供 - 序号，标题和写作的地址，即草稿的地址，设置文章类别为 【规范征求】；
 
+序号可进入规范征求目录，在最近的文章序号上递增 1 个， [https://www.cskefu.com/category/rfcs/](https://www.cskefu.com/category/rfcs/)
+
 ![](assets/media/sceenshoot_20230103153847.png)
 
-注意：
-* 序号可进入规范征求目录，在最近的文章序号上递增 1 个， [https://www.cskefu.com/category/rfcs/](https://www.cskefu.com/category/rfcs/)
-
-* 写作草稿的工具和地址不限，也不一定公开，主要是内容的质量、思考的严谨，因此不限制工具；作为春松客服开发，您可以使用一个默认的稿件管理地址或进行 Fork 自行维护，该地址是 [https://github.com/cskefu/design](https://github.com/cskefu/design)。
+写作草稿的工具和地址不限，也不一定公开，主要是内容的质量、思考的严谨，因此不限制工具；作为春松客服开发，您可以使用一个默认的稿件管理地址或进行 Fork 自行维护，该地址是 [https://github.com/cskefu/design](https://github.com/cskefu/design)。
 
 ### 2）创建 RFC 草稿
 
