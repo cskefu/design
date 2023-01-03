@@ -2,6 +2,16 @@
 
 管理春松客服的设计相关的文件。
 
+相关工作 Issue 进入 - 
+
+[https://github.com/cskefu/cskefu/issues](https://github.com/cskefu/cskefu/issues)
+
+* 在 Issue 中使用 `design` 或 `rfc` Label 维护
+
+Issues 列表
+
+* [design](https://github.com/cskefu/cskefu/issues?q=label%3Adesign)
+* [rfc](https://github.com/cskefu/cskefu/issues?q=label%3Arfc)
 
 ## 介绍
 本项目管理以下文件 -
