@@ -1,4 +1,5 @@
-.vscode
+.vscode/
+.obsidian/
 *.swp
 *.swo
 *.sublime-*
